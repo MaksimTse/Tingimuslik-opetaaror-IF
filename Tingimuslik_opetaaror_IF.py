@@ -1,10 +1,21 @@
 from math import *
 import datetime
+from random import *
+import asyncio
+from time import sleep
+
+#n=int(input("Mitu toa korteris? "))
+#for i in range(1,n+1,1):
+#    t=float(input(f"{i}. toa Temperatuur: "))
+#    if t>18:
+#        print("soe")
+#    else:
+#        print("külm")
+
 
 #1
 #try:
 #    nimi=input("Sisestage oma nimi ")
-
 #    if nimi.upper()=="JUKU":
 #        print("Lähme kinno")
 #        vanus=int(input("Kui vana sa oled? "))
@@ -78,20 +89,55 @@ import datetime
 #    print("Vale Andmetüüp")
 
 #6
-#try:
-#    a=float(input("Mis on su pikkus?(Sentimeetrites): "))
-#    if a<=0:
-#        print("Error")
-#    else:
-#        if a<=165:
-#            print("Teie pikkus on madal")
-#        elif a>165 and a<180:
-#            print("Teie pikkus on keskmine")
-#        elif a>=180:
-#            print("Teie pikkus on kõrge")
-#except:
-#    print("Vale Andmetüüp")
 
+#p=k=l=0
+#kogus=randint(1,20)
+#print("Kokku on",kogus,"inimest")
+#for i in range(1,kogus+1,1):
+#    sleep(0.5)
+#    pikkus=randint(56,256)
+#    if pikkus>178:
+#        print("Pikk")
+#        p+=1
+#    elif pikkus>155 and pikkus<=178:
+#        print("keskmine")
+#        k+=1
+#    else:
+#        print("lühike")
+#        l+=1
+#print(f"Pikka kasvu {p}\nKesmkise kasvu {k}\nLühike kasvu {l}")
+
+#p=k=l=0
+#while p!=5:
+#    sleep(0.5)
+#    pikkus=randint(56,256)
+#    if pikkus>178:
+#        print("Pikk")
+#        p+=1
+#    elif pikkus>155 and pikkus<=178:
+#        print("keskmine")
+#        k+=1
+#    else:
+#        print("lühike")
+#        l+=1
+
+#p=k=l=0
+#kogus=randint(1,20)
+#print("Kokku on",kogus,"inimest")
+#while kogus>0:
+#    kogus-=1
+#    sleep(0.5)
+#    pikkus=randint(56,256)
+#    if pikkus>178:
+#        print("Pikk")
+#        p+=1
+#    elif pikkus>155 and pikkus<=178:
+#        print("keskmine")
+#        k+=1
+#    else:
+#        print("lühike")
+#        l+=1
+#print(f"Pikka kasvu {p}\nKesmkise kasvu {k}\nLühike kasvu {l}")
 #7
 #try:
 #    a=float(input("Mis soost te olete? 0-naine 1-mees => \n"))
@@ -178,17 +224,28 @@ import datetime
 
 
 #9
-#try:
-#    a=float(input("Utle pool a "))
-#    b=float(input("Utle pool b "))
+#a=0
+#b=1
+#while a!=b:
+#    a=float(input("Utle pool a: "))
+#    b=float(input("Utle pool b: "))
 #    if a==b:
 #        print("See on ruut")
 #    else:
 #        print("See ei ole ruut")
-#except:
-#    print("Value Error")
-
-
+#while True:
+#    d=float(input("sisestage nurkade arv: "))
+#    if d==4:
+#        a=float(input("Utle pool a: "))
+#        b=float(input("Utle pool b: "))
+#        if a==b:
+#            print("See on ruut")
+#            break
+#        else:
+#            print("See ei ole ruut")
+#    else:
+#        print("See ei saa olla ruut")
+    
 #10
 #try:
 #    a=float(input("1 number "))
